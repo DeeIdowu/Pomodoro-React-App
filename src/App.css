@@ -1,0 +1,86 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(8, 8, 42, 1) 19%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  font-family: "Losttimoh";
+}
+
+h2 {
+  color: #fff;
+  font-size: 70px;
+  margin-top: 80px;
+  font-weight: 20;
+}
+
+h4 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 20;
+}
+
+p {
+  font-size: 10px;
+  color: #fff;
+  font-weight: 20;
+}
+
+button {
+  font-family: "Arial";
+  font-weight: 600;
+}
+
+main {
+  text-align: center;
+}
+
+.app-title {
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.App {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#interval-container {
+  display: flex;
+}
+
+.counter-btn,
+.counter-btn {
+  border: none;
+  background-color: #263646;
+  outline: none;
+  color: #eee;
+  padding: 2px 12px;
+  height: 25px;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 55px;
+  text-align: center;
+}
+
+.counter-btn:disabled {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 700px) {
+  #interval-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .app-title {
+    font-size: 3.5rem;
+  }
+}
